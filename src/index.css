@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+}
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.darkMode {
+  background-color: black;
+}
+
+.darkMode h1 {
+  color: white;
+}
+
+.container {
+  max-width: 950px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.list {
+  display: grid;
+  grid-gap: 1rem;
+  /* fit as many columns as you can in a row and each columns can resize within a given range */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note.new {
+  background-color: lightblue;
+}
+
+textarea {
+  font-size: 17px;
+  border: none;
+  resize: none;
+  background-color: lightblue;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.saveNote, .toggleModeButton {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.toggleModeButton {
+  font-size: 17px;
+
+}
+
+.saveNote:hover,.toggleModeButton:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.note {
+  background-color: rgb(252, 252, 147);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.noteFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #e1e1e1;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 1.5em;
+  max-height: 100%;
+}
+
+.searchContainer input {
+  border: none;
+  background-color: #e1e1e1;
+  max-width: 100%;
+  font-size: 17px;
+  flex: 1;
+}
+
+.searchContainer input:focus {
+  outline: none;
+} 
+
